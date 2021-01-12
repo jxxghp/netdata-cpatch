@@ -11,10 +11,16 @@ var netdataDashboard = window.netdataDashboard || {};
 // Menus
 
 netdataDashboard.menu = {
+	'Gauge': {
+        title: '仪表板',
+        icon: '<i class="fas fa-puzzle-piece"></i>',
+        info: ''
+    },
+	
     'system': {
         title: '系统概观',
         icon: '<i class="fas fa-bookmark"></i>',
-        info: '一眼掌握系统效能关键指标。'
+        info: ''
     },
 
     'services': {
@@ -622,6 +628,11 @@ var cgroupCPULimitIsSet = 0;
 var cgroupMemLimitIsSet = 0;
 
 netdataDashboard.context = {
+	'system.temperature': {
+        info: "CPU 温度变化情况。如果它一直处于较高的情况，这表示您的系统散热存在问题。",
+        valueRange: "[0, 100]"
+    },
+	
     'system.cpu': {
         info: function (os) {
             void(os);
