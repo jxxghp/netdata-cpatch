@@ -629,8 +629,7 @@ var cgroupMemLimitIsSet = 0;
 
 netdataDashboard.context = {
 	'system.temperature': {
-        info: "CPU 温度变化。如果它一直处于较高的情况，这表示您的系统散热存在问题。",
-        valueRange: "[0, 100]"
+        info: "CPU 温度变化。如果它一直处于较高的情况，这表示您的系统散热存在问题。"
     },
 	
     'system.cpu': {
