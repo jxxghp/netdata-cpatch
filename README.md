@@ -12,6 +12,9 @@
  -  main.js   
  -  index.html   
 
+2020-01-12：
+1、补充缺失的命令：/usr/sbin/timeout
+2、增加CPU温度监控文件temp.chart.js，以及配置setup.sh
 
 
 完成后请刷新网页，chrome请清除浏览器缓存试试
