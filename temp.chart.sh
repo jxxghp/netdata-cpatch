@@ -64,7 +64,7 @@ temp_check() {
 temp_create() {
   # create the chart with 3 dimensions
   cat << EOF
-CHART system.Temperature 'Temperature' "CPU Temperature" "Celsius degree" "Temperature" "" line $temp_priority $temp_update_every
+CHART system.temperature 'temperature' "CPU Temperature" "Celsius degree" "temperature" "" line $temp_priority $temp_update_every
 DIMENSION CPU '' absolute 1 1000
 EOF
 
@@ -80,7 +80,7 @@ temp_update() {
 
   # write the result of the work.
   cat << VALUESEOF
-BEGIN system.Temperature $1
+BEGIN system.temperature $1
 SET CPU = $temp_cpu
 END
 VALUESEOF
